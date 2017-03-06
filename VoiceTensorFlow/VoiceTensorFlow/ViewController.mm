@@ -93,26 +93,26 @@ static float femaleExample[] = {
     };
 
 	// We want to run these nodes.
-	std::vector<std::string> outputs = {
+	std::vector<std::string> nodes = {
         {"model/y_pred"},
         {"inference/inference"}
     };
 
 	// The results of running the nodes are stored in this vector.
-	std::vector<tensorflow::Tensor> results;
+	std::vector<tensorflow::Tensor> outputs;
 
 	// Run the session.
-	auto status = session->Run(inputs, outputs, {}, &results);
+	auto status = session->Run(inputs, nodes, {}, &outputs);
 	if (!status.ok()) {
 		NSLog(@"Error running model: %s", status.error_message().c_str());
 		return;
 	}
 
 	// Print out the result of the prediction.
-	auto y_pred = results[0].tensor<float, 2>();
+	auto y_pred = outputs[0].tensor<float, 2>();
 	NSLog(@"Probability spoken by a male: %f%%", y_pred(0, 0));
 
-	auto isMale = results[1].tensor<float, 2>();
+	auto isMale = outputs[1].tensor<float, 2>();
 	if (isMale(0, 0)) {
 		NSLog(@"Prediction: male");
 	} else {

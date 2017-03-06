@@ -297,11 +297,11 @@
 				ENABLE_BITCODE = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
-					"~/tensorflow/tensorflow/contrib/makefile/downloads/protobuf/src",
-					"~/tensorflow/tensorflow/contrib/makefile/downloads/eigen",
-					"~/tensorflow/tensorflow/contrib/makefile/downloads",
-					"~/tensorflow/tensorflow/contrib/makefile/gen/proto",
 					"~/tensorflow",
+					"~/tensorflow/tensorflow/contrib/makefile/downloads",
+					"~/tensorflow/tensorflow/contrib/makefile/downloads/eigen",
+					"~/tensorflow/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"~/tensorflow/tensorflow/contrib/makefile/gen/proto",
 				);
 				INFOPLIST_FILE = VoiceTensorFlow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -330,11 +330,11 @@
 				ENABLE_BITCODE = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
-					"~/tensorflow/tensorflow/contrib/makefile/downloads/protobuf/src",
-					"~/tensorflow/tensorflow/contrib/makefile/downloads/eigen",
-					"~/tensorflow/tensorflow/contrib/makefile/downloads",
-					"~/tensorflow/tensorflow/contrib/makefile/gen/proto",
 					"~/tensorflow",
+					"~/tensorflow/tensorflow/contrib/makefile/downloads",
+					"~/tensorflow/tensorflow/contrib/makefile/downloads/eigen",
+					"~/tensorflow/tensorflow/contrib/makefile/downloads/protobuf/src",
+					"~/tensorflow/tensorflow/contrib/makefile/gen/proto",
 				);
 				INFOPLIST_FILE = VoiceTensorFlow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
